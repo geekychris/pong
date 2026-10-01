@@ -62,3 +62,21 @@ src/
 tests/
   test_game.cpp             Unit tests for the game logic
 ```
+
+## Development
+
+The game logic in `src/game.hpp`/`src/game.cpp` has no terminal dependency,
+so it's unit tested directly:
+
+```bash
+cmake -S . -B build
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
+
+Both g++ 12+ and clang++ 16+ are supported; pass
+`-DCMAKE_CXX_COMPILER=clang++` to `cmake -S . -B build` to build with clang.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
