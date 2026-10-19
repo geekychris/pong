@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Pong logo" width="180">
+</p>
+
 # Terminal Pong
 
 A classic game of Pong that runs right in your terminal, rendered with ANSI
